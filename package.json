@@ -1,0 +1,18 @@
+{
+  "name": "@transfast/promisewebsocket",
+  "version": "0.0.0",
+  "description": "Promise to notify when a WebSocket or DataChannel gets ready",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takeafile/promiseWebSocket.git"
+  },
+  "author": "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Takeafile/promiseWebSocket/issues"
+  },
+  "homepage": "https://github.com/Takeafile/promiseWebSocket#readme"
+}
