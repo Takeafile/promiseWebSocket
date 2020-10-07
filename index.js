@@ -1,4 +1,4 @@
-module.exports = function(ws)
+export default function(ws)
 {
   const {CLOSED, CLOSING, CONNECTING, OPEN, readyState} = ws
 
