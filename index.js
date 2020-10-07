@@ -22,7 +22,7 @@ module.exports = function(ws)
         function onOpen()
         {
           cleanUp()
-          resolve()
+          resolve(ws)
         }
 
         ws.addEventListener('error', onError)
@@ -30,7 +30,7 @@ module.exports = function(ws)
       })
 
     case OPEN:
-      return Promise.resolve()
+      return Promise.resolve(ws)
 
     case CLOSING:
       return new Promise(function(_, reject)
