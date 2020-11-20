@@ -2,6 +2,7 @@
   "name": "@transfast/promisewebsocket",
   "version": "0.0.0",
   "description": "Promise to notify when a WebSocket or DataChannel gets ready",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
