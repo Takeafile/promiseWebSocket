@@ -1,6 +1,6 @@
 {
   "name": "@transfast/promisewebsocket",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Promise to notify when a WebSocket or DataChannel gets ready",
   "type": "module",
   "scripts": {
