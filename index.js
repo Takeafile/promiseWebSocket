@@ -48,7 +48,7 @@ export default function(ws)
       })
 
     case CLOSED:
-      return Promise.reject('Connection to signaling server already closed')
+      return Promise.reject('Connection to server already closed')
   }
 
   return Promise.reject(`Unknown readyState '${readyState}'`)
