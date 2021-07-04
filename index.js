@@ -7,26 +7,20 @@ export default function(ws)
     case CONNECTING:
       return new Promise(function(resolve, reject)
       {
-        function cleanUp()
-        {
-          ws.removeEventListener('error', onError)
-          ws.removeEventListener('open' , onOpen)
-        }
-
         function onError(error)
         {
-          cleanUp()
+          ws.removeEventListener('open' , onOpen)
           reject(error)
         }
 
         function onOpen()
         {
-          cleanUp()
+          ws.removeEventListener('error', onError)
           resolve(ws)
         }
 
-        ws.addEventListener('error', onError)
-        ws.addEventListener('open' , onOpen)
+        ws.addEventListener('error', onError, {once: true})
+        ws.addEventListener('open' , onOpen, {once: true})
       })
 
     case OPEN:
